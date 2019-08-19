@@ -18,6 +18,7 @@
 - Added: [#5696](https://github.com/ethereum/aleth/pull/5696) Istanbul support: EIP-1344 ChainID opcode.
 - Added: [#5701](https://github.com/ethereum/aleth/issues/5701) Outputs ENR text representation in admin.nodeInfo RPC.
 - Added: [#5707](https://github.com/ethereum/aleth/pull/5707) Aleth waits for 2 seconds after sending disconnect to peer before closing socket.
+- Added: [#5709](https://github.com/ethereum/aleth/pull/5709) Istanbul support: EIP-2200 Rebalance net-metered SSTORE gas cost with consideration of SLOAD gas cost change.
 - Changed: [#5532](https://github.com/ethereum/aleth/pull/5532) The leveldb is upgraded to 1.22. This is breaking change on Windows and the old databases are not compatible.
 - Changed: [#5559](https://github.com/ethereum/aleth/pull/5559) Update peer validation error messages.
 - Changed: [#5568](https://github.com/ethereum/aleth/pull/5568) Improve rlpx handshake log messages and create new rlpx log channel.
