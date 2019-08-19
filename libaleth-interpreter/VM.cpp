@@ -384,9 +384,8 @@ void VM::interpretCases()
             if (m_rev >= EVMC_TANGERINE_WHISTLE)
             {
                 // After EIP158 zero-value suicides do not have to pay account creation gas.
-                u256 const balance =
-                    fromEvmC(m_context->host->get_balance(m_context, &m_message->destination));
-                if (balance > 0 || m_rev == EVMC_TANGERINE_WHISTLE)
+                if (m_rev == EVMC_TANGERINE_WHISTLE ||
+                    fromEvmC(m_context->host->get_balance(m_context, &m_message->destination)) > 0)
                 {
                     // After EIP150 hard fork charge additional cost of sending
                     // ethers to non-existing account.
