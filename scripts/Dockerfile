@@ -8,7 +8,7 @@
 ##      -v ~/.ethereum:/.ethereum -v ~/.web3:/.web3 \
 ##      -e HOME=/ --user $(id -u):$(id -g) ethereum/client-cpp
 
-FROM alpine
+FROM alpine:3.18.5
 
 RUN apk add --no-cache \
         libstdc++ \
